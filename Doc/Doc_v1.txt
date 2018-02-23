@@ -1,0 +1,44 @@
+________________________________________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________Washington Oliveira - Android music school project______________________________________________________________
+________________________________________________________________________________________________________________________________________________________________________________________
+
+22/02/2018
+
+Nome: Wos Music
+
+Objetivo: Criar uma aplicação mobile com intuito de poder ganhar mobilidade e ter um controle maior das tarefas, junto aos alunos, professores.
+Usuários: Aplicação pra Alunos, Professores e para a Administração.
+Versão minima: 5.0
+Cores: Azul e Branco
+Tecnologia: Java, Android
+Banco: Oracle
+
+Funcionalidades do aplicativo: 
+
+Login com API do Facebook
+Login com Email
+
+Cadastro de login
+Cadastro de Alunos
+Cadastro de Professores
+Cadastro de Aulas
+Cadastro de Apresentações
+Cadastro de funcionários 
+Cadastro de roteiro de aulas
+Cadastrar anotações 
+Emitir relatórios (Aulas, alunos, professores) 
+Contatos da escola 
+Sobre
+ 
+OBS: Todos os Cadastros devem ser desenvolvidos um CRUD
+
+________________________________________________________________________________________________________________________________________________________________________________________
+1 - Criação do Projeto Java e subida no repositório GitHub washingtonos
+2 - Modelagem do banco de dados
+3 - Desenvolvimento do serviço em Java
+4 - Criação do Projeto Android e subida no repositório GitHub washingtonos
+5 - Desenvolvimento das telas
+6 - Desenvolvimento das funcionalidades
+_____________________________________________________________________________________________________________________________________________________
+
+
