@@ -2,38 +2,32 @@ package com.br.wosapp.wosMusic.models;
 
 import java.io.Serializable;
 
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
-public class Professor implements Serializable {
+public class Responsavel implements Serializable{
 
-	private static final long SerialVersionUID = 1L;
+private static final long SerialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue(strategy= GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
+	
 	private String nome;
 	private String sexo;
-	private String instrumentos;
 	private String cpf;
-	private Endereco endereco;
 	private Contato contato;
-	private Unidade unidade;
+	private Endereco endereco;
 	
-	public Professor(long id, String nome, String sexo, String instrumentos, String cpf, Endereco endereco,
-			Contato contato, Unidade unidade) {
+	public Responsavel(long id, String nome, String sexo, String cpf, Contato contato, Endereco endereco) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.sexo = sexo;
-		this.instrumentos = instrumentos;
 		this.cpf = cpf;
-		this.endereco = endereco;
 		this.contato = contato;
-		this.unidade = unidade;
+		this.endereco = endereco;
 	}
 
 	public long getId() {
@@ -60,28 +54,12 @@ public class Professor implements Serializable {
 		this.sexo = sexo;
 	}
 
-	public String getInstrumentos() {
-		return instrumentos;
-	}
-
-	public void setInstrumentos(String instrumentos) {
-		this.instrumentos = instrumentos;
-	}
-
 	public String getCpf() {
 		return cpf;
 	}
 
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
-	}
-
-	public Endereco getEndereco() {
-		return endereco;
-	}
-
-	public void setEndereco(Endereco endereco) {
-		this.endereco = endereco;
 	}
 
 	public Contato getContato() {
@@ -92,11 +70,11 @@ public class Professor implements Serializable {
 		this.contato = contato;
 	}
 
-	public Unidade getUnidade() {
-		return unidade;
+	public Endereco getEndereco() {
+		return endereco;
 	}
 
-	public void setUnidade(Unidade unidade) {
-		this.unidade = unidade;
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
 	}
 }

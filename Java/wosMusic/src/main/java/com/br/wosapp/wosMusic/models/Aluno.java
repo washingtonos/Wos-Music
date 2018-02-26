@@ -19,26 +19,33 @@ public class Aluno implements Serializable{
 	private String nome;
 	private String sexo;
 	private String cpf;
-	private String endereco;
+	private Endereco endereco;
 	private String instrumentos;
-	private int numero;
-	private String periodo;
+	private Contato contato;
+	private Responsavel responsavel_finc;
+	private Unidade	 unidade;
 	
-	private Aluno(String nome, String sexo, String cpf, String endereco, String instrumentos, int numero, String periodo) {
+	public Aluno(long id, String nome, String sexo, String cpf, Endereco endereco, String instrumentos, Contato contato,
+			Responsavel responsavel_finc, Unidade unidade) {
+		super();
+		this.id = id;
 		this.nome = nome;
 		this.sexo = sexo;
 		this.cpf = cpf;
 		this.endereco = endereco;
 		this.instrumentos = instrumentos;
-		this.numero = numero;
-		this.periodo = periodo;
+		this.contato = contato;
+		this.responsavel_finc = responsavel_finc;
+		this.unidade = unidade;
 	}
+	
 	public long getId() {
 		return id;
 	}
 	public void setId(long id) {
 		this.id = id;
 	}
+	
 	public String getNome() {
 		return nome;
 	}
@@ -57,10 +64,10 @@ public class Aluno implements Serializable{
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	public String getEndereco() {
+	public Endereco getEndereco() {
 		return endereco;
 	}
-	public void setEndereco(String endereco) {
+	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
 	public String getInstrumentos() {
@@ -69,16 +76,22 @@ public class Aluno implements Serializable{
 	public void setInstrumentos(String instrumentos) {
 		this.instrumentos = instrumentos;
 	}
-	public int getNumero() {
-		return numero;
+	public Contato getContato() {
+		return contato;
 	}
-	public void setNumero(int numero) {
-		this.numero = numero;
+	public void setNumero(Contato contato) {
+		this.contato = contato;
 	}
-	public String getPeriodo() {
-		return periodo;
+	public Responsavel getResponsavel_finc() {
+		return responsavel_finc;
 	}
-	public void setPeriodo(String periodo) {
-		this.periodo = periodo;
+	public void setResponsavel_finc(Responsavel responsavel_finc) {
+		this.responsavel_finc = responsavel_finc;
+	}
+	public Unidade getUnidade() {
+		return unidade;
+	}
+	public void setUnidade(Unidade unidade) {
+		this.unidade = unidade;
 	}
 }
